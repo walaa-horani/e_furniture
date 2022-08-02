@@ -1,0 +1,834 @@
+body{
+	font-family: Raleway !important;
+	letter-spacing: 1px !important
+}
+nav{
+	background: rgba(0,0,0,0.6);
+}
+.navbar-brand{
+width: 160px !important
+}
+.navbar-brand img{
+	width: 160px !important
+}
+nav ul li{
+	margin-right: 22px
+}
+nav ul li a{
+	color: white;
+	text-transform: capitalize;
+	font-size: 18px;
+	padding: 15px !important;
+	transition: 0.3s;
+	position: relative;
+	font-weight: 700;
+	letter-spacing: 1px
+}
+nav ul li .active,
+nav ul li a:hover{
+	color: #df60cc
+}
+.navbar button{
+	outline: none !important;
+	border:none !important;
+}
+.navbar i{
+	color: white;
+	font-size: 32px
+}
+nav ul li a:before{
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 51px;
+	height: 3px;
+	background: #fff;
+	transform: rotate(90deg);
+	transform-origin: 0;
+	transition: 0.5s
+}
+
+nav ul li a:after{
+	position: absolute;
+	content: "";
+	bottom: 0;
+	right: 0;
+	width: 51px;
+	height: 3px;
+	background: #fff;
+	transform: rotate(90deg);
+	transform-origin: 100% 0;
+	transition: 0.5s
+}
+nav ul li .active:before,
+nav ul li a:hover:before{
+	transform: rotate(0);
+	left: 50%;
+	transform: translate(-50%);
+}
+nav ul li .active:after,
+nav ul li a:hover:after{
+transform: rotate(0);
+	left: 50%;
+	transform: translate(-50%);
+}
+.header{
+	height: 655px
+}
+.carousel, .carousel-inner, .carousel-item{
+	height: 100% !important
+}
+.header img{
+	height: 650px;
+	width: 100%;
+	border-radius: 0 0 50% 50% / 0 0 100% 100%;
+	transform: scale(1-5);
+	filter: brightness(0.2);
+}
+.carousel-indicators li{
+	transition: 0.3s
+}
+.carousel-indicators li.active{
+	background-color: #df60cc
+}
+.carousel-indicators li:hover{
+	transform: rotate(180deg) !important;
+}
+.carousel-control-next-icon{
+	position: absolute;
+    right:  165px;
+
+}
+.carousel-control-prev-icon{
+	position: absolute;
+    left:  165px;
+}
+.header .info{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: white;
+	text-align: center;
+}
+a{
+	text-decoration: none !important;
+}
+.header .info p{
+font-size: 32px;
+font-weight: 700;
+text-transform: capitalize;
+
+}
+.header .info h2{
+	font-size: 50px;
+	margin: 30px 0;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+.header .info .btn{
+	border-radius: 50px;
+	padding: 10px 25px;
+	margin: 3px;
+	text-transform: capitalize;
+	background: none !important;
+	border:2px solid #df60cc;
+	outline: none !important; 
+	color:white;
+}
+.header .info .btns .active{
+	background:#df60cc !important;
+	border: none !important;
+	outline: none !important; 
+}
+
+
+
+.heading{
+	margin-bottom: 30px;
+
+}
+.heading h2{
+	font-size: 40px;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+
+.heading span{
+	width: 150px;
+	height: 3px;
+	display: block;
+	background: #df60cc;
+	margin: 0 auto;
+}
+.about{
+	color: #444;
+	background: #f9f9f9;
+	padding: 25px;
+	margin-top: 0px
+}
+
+
+.about img{
+	width: 95%
+}
+
+.about h4{
+font-size: 16px;
+font-weight: 700;
+text-transform: capitalize;
+}
+.about p{
+	font-size: 14px
+}
+.about ul{
+	list-style: none;
+	padding: 0;
+}
+.about ul li{
+	font-size: 14px;
+	margin-top: 10px;
+	text-transform: capitalize;
+}
+.about  i{
+	font-size: 14px;
+	color: #df60cc;
+	margin-right: 10px
+}
+.about .row{
+	margin-top: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.services .box{
+	margin-top: 25px;
+	color:#444;
+}
+.services .box i{
+font-size: 32px;
+cursor: pointer;
+transition: 0.3 !important;
+
+}
+
+.services .box:hover i{
+color:#df60cc;
+}
+.services .box:hover h5{
+	color:#df60cc;
+}
+.services .box h5{
+margin: 20px 0;
+font-size: 25px;
+cursor: pointer;
+transition: 0.3 !important;
+}
+
+
+.services .box p{
+font-size: 14px
+}
+.team{
+	margin-top: 70px
+}
+
+.team img{
+width: 100%;
+
+}
+
+.team .info h5{
+	font-size: 23px;
+	font-weight: 600;
+}
+.team .info{
+	padding: 10px
+}
+
+.team .box{
+	border:1px solid #999;
+}
+
+.overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+}
+.team .overlay{
+	transition: 0.5s;
+	transform: translateX();
+	opacity: 0
+}
+
+.image{
+position: relative;
+cursor: pointer;
+}
+.team .links{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	transition: 0.7;
+}
+.team .links i{
+	padding: 6px;
+	font-size: 20px;
+	color:white;
+	border-radius: 50%;
+	border:2px solid white;
+	margin-right: 4px;
+
+}
+.team .image:hover .overlay{
+opacity: 1;
+}
+
+.back img{
+	height: 470px
+}
+.team .image{
+	position: relative;
+}
+.btn-danger.active{
+	border-radius: 50px !important;
+	padding: 10px 25px;
+	margin: 3px;
+	background: #df60cc  !important;
+    border: none !important;
+    outline: none !important;
+    color: white !important
+}
+.btn-danger{
+	background: transparent !important;
+	border:1px solid #df60cc !important;
+	outline: none !important;
+	border-radius: 50px !important;
+	font-weight: 600
+
+}
+.btn-danger:hover{
+	background: #C71585 !important;
+	transition: 0.3;
+	font-weight: 600
+}
+.back .image{
+	position: relative;
+}
+.back .info{
+	position: absolute;
+	color: white;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 80%;
+
+}
+.back .info h4{
+margin-bottom: 15px;
+font-weight: 700;
+}
+.back .info p{
+font-weight: 600;
+line-height: 30px
+}
+
+
+.portfolio .btn-danger{
+	color: #df60cc;
+	font-weight: 600
+}
+
+
+.portfolio .box .info{
+position: absolute;
+top: 60%;
+left: 50%;
+transform: translate(-50%,-50%);
+color: white;
+text-align: center;
+cursor: pointer;
+}
+
+.portfolio .info h4{
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.portfolio .info span{
+	font-size: 18px;
+		font-weight: 600
+
+}
+.portfolio .overlay{
+	transform: translate(0,-50px);
+	transition: 0.5s;
+	opacity: 0
+}
+.portfolio .box{
+	position: relative;
+	margin-bottom: 30px;
+	cursor: pointer;
+	overflow: hidden;
+}
+.portfolio .box:hover .overlay{
+opacity: 1;
+transform: translate(0,0);
+}
+.portfolio img{
+	width: 100%;
+	
+	height: 230px
+}
+
+.up{
+	position: fixed;
+	right: 18px;
+	bottom: 18px;
+	background: #df60cc;
+	color: white;
+	border:none;
+	border-radius: 50%;
+	font-size: 22px;
+	outline: none !important;
+	display: none;
+
+
+}
+.testimonials{
+	background: url("img/pexels-pixabay-37347.jpg");
+	height: 450px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+	color: white
+
+}
+
+
+.testimonials .carousel-item {
+	margin-top: 15% !important
+}
+
+.testimonials ol{
+	bottom: -35px !important;
+	position: absolute !important;
+}
+.testimonials .icon{
+	width: 70px;
+	height: 70px;
+	border:1px solid #fff;
+	border-radius:50%;
+	margin: 15px auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.contact .info2{
+    border-right: 1px solid;
+    border-left: 1px solid;
+}
+
+.contact i{
+	width: 60px;
+	height: 60px;
+	border:1px solid 	#df60cc;
+	border-radius: 50%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 10px;
+	color: #df60cc
+}
+
+.contact p{
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 24px
+}
+
+.contact .map iframe{
+	width: 100% !important
+}
+
+
+.contact textarea,
+.contact input{
+	border-radius: 0;
+	padding: 20px 15px;
+	box-shadow: none !important;
+}
+.contact button{
+	border-radius: 50px;
+    padding: 8px 15px;
+    margin: 3px;
+    text-transform: capitalize;
+   
+    border: 2px solid #df60cc;
+    outline: none !important;
+  background: #df60cc !important;
+    border: none !important;
+   color: white;
+   font-weight: 600;
+    font-size: 14px;
+}
+
+.footer p{
+	text-transform: capitalize;
+	text-align: center;
+
+}
+.footer span{
+	color:  #C71585;
+	font-weight: 600;
+}
+.footer{
+	background: #f1f1f1;
+	padding: 20px 0;
+
+}
+
+
+
+
+@media only screen and (max-width: 1200px){
+
+	.portfolio img {
+    width: 100%;
+    height: 200px;
+    }
+    .team .info h5{
+    	font-size: 22px
+    }
+    .back img{
+    	height: 410px;
+    }
+    
+    .header .info h2{
+    	font-size: 30px;
+    }
+    .nav-link{
+    	font-size: 14px
+    }
+    nav ul li a:before{
+    	top: -5px;
+    }
+    .back img {
+    height: 380px;
+}
+@media only screen and (max-width: 992px) {
+.header .info{
+	top: 40%
+}
+.fixed-top{
+	width: 100%
+}
+.header .info p{
+font-size: 23px;
+
+
+}
+.header .info h2{
+	font-size: 22px;
+	line-height: 34px
+	
+}
+.carousel-control-prev-icon {
+    position: absolute;
+    left: 70px;
+}
+.carousel-control-next-icon {
+    position: absolute;
+    right: 70px;
+
+}
+.header img{
+	height: 500px;
+border-radius: 0 0 50% 50% / 0 0 100% 100%	
+}
+.carousel-indicators{
+position: absolute !important;
+bottom: 175px !important;
+	}
+	.btns{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.header .info .btn{
+	border-radius: 50px;
+	padding: 5px 15px;
+	margin: 3px;
+	text-transform: capitalize;
+	background: none !important;
+	border:2px solid #df60cc;
+	outline: none !important; 
+	color:white;
+	font-size: 14px
+}
+.nav-link{
+display: inline-block !important;
+	}
+.about{
+	margin-top:-80px
+}
+.info{
+	margin-top: 40px
+}
+.about img{
+	height: 250px;
+    width: 100%;
+}
+.team img {
+    width: 100%;
+    height: 100%;
+}
+.portfolio img{
+	width: 100%;
+	height: 200px;
+	margin-top: 25px
+}
+	.contact .info {
+    border-right: 1px solid;
+    border-left: 1px solid;
+}
+.contact .col-md-6{
+		margin: 15px auto
+	}
+	.back img {
+height: 100%;
+
+}
+
+}
+@media only screen and (max-width: 768px){
+	.contact .col-md-6{
+		margin: 15px auto
+	}
+	
+	.contact .info {
+    border-right: 1px solid;
+    border-left: 1px solid;
+}
+.portfolio img{
+	width: 100%;
+	height: 300px;
+	margin-top: 25px
+}
+
+
+.back img {
+    height: 450px;}
+.fixed-top{
+	width: 100%
+}
+.header img{
+	height: 500px;
+border-radius: 0 0 50% 50% / 0 0 100% 100%
+}
+}
+@media only screen and (max-width: 576px){
+	.back img {
+    height: 440px;
+}
+.header img{
+	height: 500px;
+border-radius: 0 0 50% 50% / 0 0 100% 100%	
+}
+@media only screen and (max-width: 576px){
+	.about img {
+    height: 320px;
+}
+.header .info p {
+    font-size: 20px;
+
+}
+.header .info h2 {
+    font-size: 15px;
+
+    }
+    .header .info {
+    top: 30%;
+    }
+    .carousel-control-prev-icon{
+    	top: 35%;
+    left: 65%;
+    }
+     .carousel-control-next-icon{
+    	top: 35%;
+    right: 65%;
+    }
+    .testimonials .icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7px;
+ }
+ @media only screen and (min-width: 360px){
+ 	.header .info p {
+    font-size: 12px;
+}
+.header .info h2 {
+    font-size: 10px;
+}
+.header .info .btn{
+	font-size: 8px;
+	padding: 5px 13px;
+ }
+.header img {
+    height: 500px;
+    border-radius: 0 0 100% 100% / 0 0 100% 100%;
+}
+.heading h2 {
+    font-size: 22px;
+}
+
+    .about img {
+    height: 200px;
+
+}
+
+    .back img {
+    height: 100%;
+
+}
+.back .info h4{
+	font-size: 15px;
+}
+.back .info p{
+	font-size: 11px;
+	line-height: 20px;
+}
+
+body > section.back.mt-5 > div > div:nth-child(2) > div > div.info > a{
+	padding: 6px;
+    font-size: 11px;
+    font-weight: 600;
+}
+#portfolio > div > div.btns.text-center > ul{
+	    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+.portfolio ul li{
+	font-size: 12px;
+	padding: 4px;
+	margin-left: 5px
+}
+.portfolio ul li.active{
+font-size: 12px;
+	padding: 4px;	
+}
+.portfolio img{
+	height: 100%
+}
+}
+@media only screen and (max-width: 360px){
+ 	.header .info p {
+    font-size: 12px;
+}
+.header .info h2 {
+    font-size: 10px;
+}
+.header .info .btn{
+	font-size: 8px;
+	padding: 5px 13px;
+ }
+.header img {
+    height: 500px;
+    border-radius: 0 0 100% 100% / 0 0 100% 100%;
+}
+.heading h2 {
+    font-size: 22px;
+}
+
+    .about img {
+    height: 200px;
+
+}
+
+    .back img {
+    height: 100%;
+
+}
+.back .info h4{
+	font-size: 15px;
+}
+.back .info p{
+	font-size: 11px;
+	line-height: 20px;
+}
+
+body > section.back.mt-5 > div > div:nth-child(2) > div > div.info > a{
+	padding: 6px;
+    font-size: 11px;
+    font-weight: 600;
+}
+#portfolio > div > div.btns.text-center > ul{
+	    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+.portfolio ul li{
+	font-size: 12px;
+	padding: 4px;
+	margin-left: 5px
+}
+.portfolio ul li.active{
+font-size: 12px;
+	padding: 4px;	
+}
+.portfolio img{
+	height: 100%
+}
+}
+ @media only screen and (min-width: 320px){
+ 	.back img{
+ 		height: 100% !important
+ 	}
+ 	}
+ @media only screen and(min-width: 411px){
+ 	.back img{
+ 		height: 300px;
+ 		width: 200px
+ 	}
+
+#portfolio > div > div.btns.text-center > ul{
+	    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+.portfolio ul li{
+	font-size: 12px;
+	padding: 4px;
+	margin-left: 5px
+}
+.portfolio ul li.active{
+font-size: 12px;
+	padding: 4px;	
+}
+.portfolio img{
+	height: 100%;
+}
+}
